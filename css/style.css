@@ -1,0 +1,184 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(177, 237, 229);
+    background: linear-gradient(90deg, rgba(177, 237, 229, 1) 0%, rgba(93, 118, 169, 1) 73%);
+    font-family: Arial;
+    margin: 30px 30px;
+}
+
+input[type="text"] {
+    font-size: 1.5em;
+    padding: 10px;
+    border: solid 5px #969696;
+    transition: border 1s;
+    border-radius: 4px;
+}
+
+input[type="text"]:hover, input[type="text"].focus {
+    border: solid 5px #6a6969;
+}
+
+button {
+    margin-top: 20px;
+    color: #237c48;
+    background-color: #fff;
+    border: 2px solid #237c48;
+    border-radius: 4px;
+    padding: 12px 18px;
+}
+
+button:hover {
+    background: #43a26b;
+    color: #fff;
+}
+
+#weather {
+    margin: 50px auto;
+    display: none;
+}
+
+.temp {
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.description {
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.location {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.weatherbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.feels {
+    margin-bottom: 5px;
+}
+
+.box1 {
+    display: flex;
+    width: 345px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+
+.box2 {
+    display: flex;
+    width: 345px;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.bigBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #dadada;
+    border-radius: 10px;
+    width: 425px;
+    border: 5px solid #969696;
+}
+
+.displayContainer {
+    display: inline-block;
+    margin: 20px 20px;
+    border: 2px solid rgb(114, 114, 116);
+    border-radius: 10px;
+    background-color: #dadada;
+}
+
+.forecast-title {
+    margin-top: 85px;
+}
+
+.timeBox1 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.tempBox {
+    display: flex;
+    align-items: center;
+}
+
+.forecastTemp {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.timeBox2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.time {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.date {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.description2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.details {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.feelsLike {
+    margin-bottom: 10px;
+}
+
+.rule {
+    width: 80px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 425px) {
+    .bigBox {
+        width: 350px;
+    }
+
+    .box1 {
+        width: 325px;
+    }
+
+    .box2 {
+        width: 325px;
+    }
+}
